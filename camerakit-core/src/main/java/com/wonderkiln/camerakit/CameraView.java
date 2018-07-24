@@ -235,11 +235,11 @@ public class CameraView extends CameraViewLayout {
         }
         mIsStarted = true;
         int cameraCheck = ContextCompat.checkSelfPermission(getContext(), Manifest.permission.CAMERA);
-        int audioCheck = ContextCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO);
+        //int audioCheck = ContextCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO);
 
         switch (mPermissions) {
             case PERMISSIONS_STRICT:
-                if (cameraCheck != PackageManager.PERMISSION_GRANTED || audioCheck != PackageManager.PERMISSION_GRANTED) {
+                if (cameraCheck != PackageManager.PERMISSION_GRANTED ) {
                     requestPermissions(true, true);
                     return;
                 }
