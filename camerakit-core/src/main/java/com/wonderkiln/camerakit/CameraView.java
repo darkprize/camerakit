@@ -521,7 +521,7 @@ public class CameraView extends CameraViewLayout {
 
         List<String> permissions = new ArrayList<>();
         if (requestCamera) permissions.add(Manifest.permission.CAMERA);
-        if (requestAudio) permissions.add(Manifest.permission.RECORD_AUDIO);
+        //if (requestAudio) permissions.add(Manifest.permission.RECORD_AUDIO);
 
         if (activity != null) {
             ActivityCompat.requestPermissions(
